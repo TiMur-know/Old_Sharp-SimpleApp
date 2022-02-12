@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC500FB8-6E7E-476B-84FA-9A639038E7B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PRoject</RootNamespace>
+    <AssemblyName>PRoject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Corpus.cs" />
+    <Compile Include="Data\CPU.cs" />
+    <Compile Include="Data\HDD.cs" />
+    <Compile Include="Data\Model1.cs" />
+    <Compile Include="Data\Motherboald.cs" />
+    <Compile Include="Data\PSU.cs" />
+    <Compile Include="Data\RAM.cs" />
+    <Compile Include="Data\SSD.cs" />
+    <Compile Include="Data\System_cold.cs" />
+    <Compile Include="Data\Videocard.cs" />
+    <Compile Include="Developer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Developer.Designer.cs">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter_Trader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter_Trader.Designer.cs">
+      <DependentUpon>Enter_Trader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CheckedN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CheckedN.Designer.cs">
+      <DependentUpon>Form_CheckedN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Corpus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Corpus.Designer.cs">
+      <DependentUpon>Form_Corpus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CPU.Designer.cs">
+      <DependentUpon>Form_CPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_HDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HDD.Designer.cs">
+      <DependentUpon>Form_HDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Mother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Mother.Designer.cs">
+      <DependentUpon>Form_Mother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PC.Designer.cs">
+      <DependentUpon>Form_PC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RAM.Designer.cs">
+      <DependentUpon>Form_RAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SSD.Designer.cs">
+      <DependentUpon>Form_SSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_System_cold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_System_cold.Designer.cs">
+      <DependentUpon>Form_System_cold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Videocard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Videocard.Designer.cs">
+      <DependentUpon>Form_Videocard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Checked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Checked.Designer.cs">
+      <DependentUpon>Form_Checked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PSU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PSU.Designer.cs">
+      <DependentUpon>Form_PSU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Photo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Photo.Designer.cs">
+      <DependentUpon>Form_Photo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Developer.resx">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter_Trader.resx">
+      <DependentUpon>Enter_Trader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CheckedN.resx">
+      <DependentUpon>Form_CheckedN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Corpus.resx">
+      <DependentUpon>Form_Corpus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CPU.resx">
+      <DependentUpon>Form_CPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HDD.resx">
+      <DependentUpon>Form_HDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Mother.resx">
+      <DependentUpon>Form_Mother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PC.resx">
+      <DependentUpon>Form_PC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PSU.resx">
+      <DependentUpon>Form_PSU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RAM.resx">
+      <DependentUpon>Form_RAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SSD.resx">
+      <DependentUpon>Form_SSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_System_cold.resx">
+      <DependentUpon>Form_System_cold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Videocard.resx">
+      <DependentUpon>Form_Videocard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Checked.resx">
+      <DependentUpon>Form_Checked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Photo.resx">
+      <DependentUpon>Form_Photo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
